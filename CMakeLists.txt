@@ -14,7 +14,7 @@ add_library(FileWatcher SHARED
 set_target_properties(FileWatcher PROPERTIES VERSION 1.0.0)
 set_target_properties(FileWatcher PROPERTIES PUBLIC_HEADER include/FileWatcher/FileWatcher.h)
 
-target_include_directories(FileWatcher PRIVATE include)
+target_include_directories(FileWatcher PUBLIC include)
 target_include_directories(FileWatcher PRIVATE source)
 
 include(GNUInstallDirs)
